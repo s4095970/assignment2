@@ -1,0 +1,61 @@
+<html>
+<head>
+    <title>
+        Test Website
+    </title>
+
+    <style>
+        .row{
+            width:720px;
+            margin: 10px auto 10px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding: 20px;
+            }
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+</head>
+
+<body style="background-color:rgb(71, 68, 121)">
+
+    <div class="row">
+        <div class="image-container"><img id="calculator" src="img/calculator.png" onmouseover="this.src='img/calculatorswap.png';" onmouseout="this.src='img/calculator.png';" Width="200" height="200"></div>
+        <div class="image-container"><img id="calender" src="img/calendar.png" onmouseover="this.src='img/calendarswap.png';" onmouseout="this.src='img/calendar.png';" width="200" height="200"></div>
+        <div class="image-container"><img id="camera" src="img/camera.png" onmouseover="this.src='img/cameraswap.png';" onmouseout="this.src='img/camera.png';" width="200" height="200"></div>
+    </div>
+
+    <div class="row">
+        <div class="image-container"><img id="maps" src="img/maps.png" onmouseover="this.src='img/mapsswap.png';" onmouseout="this.src='img/maps.png';" width="200" height="200"></div>
+        <div class="image-container"><img id="settings" src="img/settings.png" onmouseover="this.src='img/settingsswap.png';" onmouseout="this.src='img/settings.png';" width="200" height="200"></div>
+        <div class="image-container"><img id="clocks" src="img/clocks.png" onmouseover="this.src='img/clocksswap.png';" onmouseout="this.src='img/clocks.png';" width="200" height="200"></div>
+    </div>
+
+    <div class="row">
+        <div class="image-container"><img id="weather" src="img/weather.png" onmouseover="this.src='img/weatherswap.png';" onmouseout="this.src='img/weather.png';" width="200" height="200"></div>
+        <div class="image-container"><img id="flashlight" src="img/Flashlight.png" onmouseover="this.src='img/flashlightswap.png';" onmouseout="this.src='img/Flashlight.png';" width="200" height="200"></div>
+        <div class="image-container"><img id="store" src="img/store.png" width="200" onmouseover="this.src='img/storeswap.png';" onmouseout="this.src='img/store.png';" height="200"></div>
+    </div>
+
+    <script>
+        var sound1 = new buzz.sound("sound/traffic.wav");
+        var sound2 = new buzz.sound("sound/sound2.mp3");
+        var sound3 = new buzz.sound("sound/sound3.mp3");
+
+        window.onload = function() {
+            document.getElementById('calculator').addEventListener('click', function () {sound1.play();});
+            document.getElementById('calender').addEventListener('click', function () {sound2.play();});
+            document.getElementById('camera').addEventListener('click', function () {sound3.play();});
+            document.getElementById('maps').addEventListener('click', function () {sound34.play();});
+            document.getElementById('settings').addEventListener('click', function () {sound5.play();});
+            document.getElementById('clocks').addEventListener('click', function () {sound6.play();});
+            document.getElementById('weather').addEventListener('click', function () {sound7.play();});
+            document.getElementById('flashlight').addEventListener('click', function () {sound8.play();});
+            document.getElementById('store').addEventListener('click', function () {sound9.play();});
+        };
+    </script>
+
+    </body>
+</html>
